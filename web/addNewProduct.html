@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<!--
+addNewProduct.html
+เพื่อรับข้อมูลสินค้าจากผู้ใช้งาน
+-->
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+    </head>
+    <body> 
+        <h2>เพิ่มเมนูสินค้า (+)</h2> 
+        <form action="AddNewProductServlet"> 
+          ชื่อสินค้า : <input type="text" name="productName"><br/> 
+          ประเภท : <select name="productType" id="productType">  
+            <option value="อาหาร">อาหาร</option> 
+            <option value="เครื่องดื่ม">เครื่องดื่ม</option>
+            <option value="เครื่องใช้ไฟฟ้าต่างๆ">เครื่องใช้ไฟฟ้าต่างๆ</option>
+            <option value="อุปกรณ์การใช้งานอื่นๆ">อุปกรณ์การใช้งานอื่นๆ</option>
+          </select><br/>
+          จำนวน :
+          <input type="number" id="quantity" name="quantity" min="0" step="1"> ชิ้น <br/>
+          ราคา : 
+          <input type="text" name="price"> บาท <br/>
+          <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
+
